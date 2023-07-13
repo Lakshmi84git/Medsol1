@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [medsol1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="medicalapp Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.medsol1.testcases.TC_Admin_created">
+        <methods>
+          <include name="Admintest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.medsol1.testcases.TC_Admin_created -->
+      <class name="com.medsol1.testcases.TC_Admin_modified">
+        <methods>
+          <include name="setup"/>
+          <include name="Adminmodified"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.medsol1.testcases.TC_Admin_modified -->
+    </classes>
+  </test> <!-- medicalapp Test(failed) -->
+</suite> <!-- Failed suite [medsol1] -->
